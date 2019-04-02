@@ -1,0 +1,22 @@
+
+plugins {
+    id 'java'
+      id 'eclipse-wtp'
+    id 'war'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+
+ compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
+ 
+    implementation 'com.google.guava:guava:26.0-jre'
+// https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+providedCompile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+
+    testImplementation 'junit:junit:4.12'
+}
+
