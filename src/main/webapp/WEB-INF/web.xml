@@ -44,6 +44,15 @@
 		<servlet-name>Servlet03</servlet-name>
 		<servlet-class>Study.ex01.Servlet03</servlet-class>
 	</servlet>
+	
+	<servlet>
+    <servlet-name>Study.ex04.Servlet05</servlet-name>
+    <servlet-class>Study.ex04.Servlet05</servlet-class>
+    <!-- 멀티파트 데이터를 처리하려면 다음 태그를 선언해야 한다. -->
+    <multipart-config>
+      <max-file-size>10000000</max-file-size>
+    </multipart-config>
+  </servlet>
 
 	<servlet-mapping>
 		<servlet-name>Servlet01</servlet-name>
@@ -59,6 +68,13 @@
 		<servlet-name>Servlet03</servlet-name>
 		<url-pattern>/ex01/s03</url-pattern>
 	</servlet-mapping>
+	
+	
+  <servlet-mapping>
+    <servlet-name>Study.ex04.Servlet05</servlet-name>
+    <url-pattern>/ex04/s5</url-pattern>
+  </servlet-mapping>
+	
 
 <!-- 리스너 -->
 <listener>
