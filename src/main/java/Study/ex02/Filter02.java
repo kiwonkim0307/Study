@@ -9,7 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
-public class Filter01 implements Filter{
+public class Filter02 implements Filter{
 @Override
 public void init(FilterConfig filterConfig) throws ServletException {
 	// 필터 객체를 생성한 후 제일 첨 호출된다

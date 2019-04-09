@@ -5,17 +5,27 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h1> GET 요청 1</h1>
+<p>
+웹 브라우저 주소 창에 'http://localhost:8080/Study/ex04/s1?name=홍길동&age=20'
+</p>
 
-<h1>POST 요청</h1>
+<h1> GET 요청 2</h1>
+<p>
+링크 클릭
+<a href="http://localhost:8080/Study/ex04/s1?name=임꺽정&age=25">get요청</a>
+</p>
+
+<h1> GET 요청 3</h1>
 <p>
 다음 입력폼에 값을 넣고 '전송' 버튼을 클릭한다.
 </p>
-<form action="http://localhost:8080/Study/ex04/s2" method="post">
-  이름: <input type="text" name="name"><br>
-  나이: <input type="number" name="age"><br>
+
+<form action="http://localhost:8080/Study/ex04/s1" method="get">
+  이름 : <input type="text" name="name"><br>
+  나이 : <input type="number" name="age"><br>
   <input type="submit" value="전송">
 </form>
-
 
 </body>
 </html>

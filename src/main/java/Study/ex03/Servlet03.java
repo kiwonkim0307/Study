@@ -10,22 +10,18 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/ex03/s3")
+@SuppressWarnings("serial")
 public class Servlet03 extends GenericServlet{
-
-
-	private static final long serialVersionUID = 1L;
-
-	@Override
-	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-
-		res.setContentType("text/html;charset=UTF-8");
-		PrintWriter out = res.getWriter();
-
-		out.println("<!DOCTYPE html>");
-		out.println("<html>");
-		out.println("<head><title>hihi</title></head>");
-		out.println("<body><h1>안녕하세요 연습중입니다</h1></body>");
-		out.println("</html>");
-	}
-
+@Override
+public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+	
+	res.setContentType("text/html;charset=UTF-8");
+	PrintWriter out = res.getWriter();
+	out.println("<html>");
+	out.println("<head><title>Servlet03</title></head>");
+	out.println("<body><h1>하이루</h1></body>");
+	out.println("</html>");
+	
+	
+}
 }

@@ -10,18 +10,16 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/ex03/s2")
+@SuppressWarnings("serial")
 public class Servlet02 extends GenericServlet{
-	 
+@Override
+public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
 	
-	private static final long serialVersionUID = 1L;
-
-	@Override
-	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+	res.setContentType("text/plain;charset=UTF-8");
+	PrintWriter out = res.getWriter();
+	out.println("hello");
+	out.println("안녕하세요");
 	
-		res.setContentType("text/plain;charset=UTF-8");
-		PrintWriter out = res.getWriter();
-		out.print("안녕하세요");
-		
-	}
-
+	
+}
 }
