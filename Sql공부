@@ -56,7 +56,28 @@ desc 테이블명;
 
 ## boolean 
 
-## 키 컬럼 지정 할 차례
+## 키 컬럼 지정
+
+#### primary key
+ - 테이블의 데이터를 구분할 때 사용하는 컬럼들이다.
+ - 줄여서 PK라고 표시한다.
+ - PK커럼을 지정하지 않으면 데이터가 중복될 수 있다.
+
+#### unique = alternate key(대안키)
+ - PK는 아니지만 PK처럼 중복을 허락하지 않는 컬럼을 지정할 때 사용한다.
+ - 그래서 PK를 대신해서 사용할 수 있는 key라고 해서 "대안키(alternate key)"라고 부른다.
+   constraint test1_uk unique (name, age),
+#### index
+ - 검색 조건으로 사용되는 컬럼은 정렬되어야만 데이터를 빨리 찾을 수 있다.
+ - 특정 컬럼의 값을 A-Z 또는 Z-A로 정렬시키는 문법이 인덱스이다.
+   fulltext index test1_name_idx (name)
+ 
+
+### 테이블 변경  할차례
+ 
+ 
+ 
+ 
 
 
 
