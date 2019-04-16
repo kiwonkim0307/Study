@@ -44,6 +44,11 @@
 		<servlet-name>Servlet03</servlet-name>
 		<servlet-class>Study.ex01.Servlet03</servlet-class>
 	</servlet>
+	<servlet>
+	 <servlet-name>Study.ex06.Servlet02</servlet-name>
+	 <servlet-class>Study.ex06.Servlet02</servlet-class>
+	 <load-on-startup>1</load-on-startup>
+	</servlet>
 	
 	<servlet>
     <servlet-name>Study.ex04.Servlet05</servlet-name>
@@ -74,6 +79,12 @@
     <servlet-name>Study.ex04.Servlet05</servlet-name>
     <url-pattern>/ex04/s5</url-pattern>
   </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Study.ex06.Servlet02</servlet-name>
+    <url-pattern>/ex06/s2</url-pattern>
+  </servlet-mapping>
+
 	
 
 <!-- 리스너 -->
